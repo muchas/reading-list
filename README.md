@@ -1,6 +1,4 @@
-# reading-list
-Slawek's reading list. 
-
+# Slawek's reading-list
 Interesting articles I've encountered grouped by month. Mostly about tech.
 
 
