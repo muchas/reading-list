@@ -6,7 +6,7 @@ Interesting articles I've encountered grouped by month. Mostly about tech.
 
 ## 2021/April
 - [Data, objects, and how we're railroaded into poor design](https://www.tedinski.com/2018/01/23/data-objects-and-being-railroaded-into-misdesign.html)
-  - Programs can be modeled with two pieces: data i.e. immutable values with exposed fixed schema and objects - sets of operations around encapsulated state. Author thinks it's critical to properly distinguish the two and argues that programming languages rarely support both of them well, often falling into extremes (Haskell encourages to build around data, Java - almost everything is an object).
+  - Programs can be modeled with two pieces: data i.e. immutable values with exposed fixed schema and objects - sets of operations around encapsulated state. Author thinks it's critical to properly distinguish the two and argues that programming languages rarely support both of them well, often falling into the extremes (Haskell encourages to build around data, Java - almost everything is an object).
 - [Expression Problem](https://wiki.c2.com/?ExpressionProblem)
   - Defining an interface (fixed set of operations), makes it easy to add new type variants without breaking the clients. The opposite is true for a fixed set of type variants, a.k.a. sum type - it's easy to add new operations (just create a new function and pattern match over type variants), but adding new type would break other clients which already used that union type.
   - The interface approach dominates in OOP languages, whereas FP embraces algebraic data types.
@@ -14,6 +14,9 @@ Interesting articles I've encountered grouped by month. Mostly about tech.
   - Importantly, sum type can be simulated in Java with the visitor pattern!
   - There are constructs that solve that "problem" (e.g. type classes), but solving it may be not worth it, as pointed out in the article below.
 - [Design duality and the expression problem](https://www.tedinski.com/2018/02/27/the-expression-problem.html)
-  - I really liked the analogy to math, where integers are more data oriented (definition specifies fixed data upfront) and more operations are added on top, whereas abstract algebra (groups, rings etc) define fixed operations and find structures implementing them (types).
+  - I really liked the analogy to math, where natural numbers are more data oriented (definition specifies fixed data upfront) and more operations are added on top, whereas abstract algebra (groups, rings etc) define fixed operations and find structures implementing them (types).
+  - Important one: client extensibility should not be a default, as closing operations and types extension makes it possible add new things from designer POV (without breaking the clients)
+- [Designing abstractions with properties in mind](https://www.tedinski.com/2018/04/24/design-and-property-tests.html)
+  - Properties seem powerful - once you define one against the abstraction (e.g interface) you can test all implementations the same way.  
 - Book: Java Concurrency in Practice
-  - Key topics: compound actions, visibility (thread caches etc), without synchronization Java may change operation order, safe publication, confinement (thread, instance, stack), trade-off between synchronization and performance, different ways of achieving thread safety (e.g. immutability), documenting and being aware of concurrency policies 
+  - Key topics: compound actions, visibility (thread caches etc), encapsulation helps in thread safety, without synchronization Java may change operation order, safe publication, confinement (thread, instance, stack), trade-off between synchronization and performance, different ways of achieving thread safety (e.g. immutability), documenting and being aware of concurrency policies
