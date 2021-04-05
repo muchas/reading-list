@@ -1,5 +1,5 @@
 # Slawek's reading-list
-Interesting blog posts and articles I've encountered grouped by month. Mostly about tech.
+Interesting blog posts and articles I've encountered, grouped by month. Mostly about tech.
 
 
 ## 2021/April
@@ -8,7 +8,7 @@ Interesting blog posts and articles I've encountered grouped by month. Mostly ab
 - [Expression Problem](https://wiki.c2.com/?ExpressionProblem)
   - Defining an interface (fixed set of operations), makes it easy to add new type variants without breaking the clients. The opposite is true for a fixed set of type variants, a.k.a. sum type - it's easy to add new operations (just create a new function and pattern match over type variants), but adding new type would break other clients which already used that union type.
   - The interface approach dominates in OOP languages, whereas FP embraces algebraic data types.
-  - In the light of above, it's less surprising that FP languages are more often used in applications with fixed data types as compilers and OOP fits better web apps where underlying data changes more often. However, I imagine mix of both working quite well (what resonates with [Data, objects, and how we're railroaded into poor design](https://www.tedinski.com/2018/01/23/data-objects-and-being-railroaded-into-misdesign.html)).
+  - In the light of above, it's less surprising that FP languages are more often used in applications with fixed data types (e.g. compilers) and OOP fits better web apps where underlying data changes more often. However, I imagine mix of both working quite well (what resonates with [Data, objects, and how we're railroaded into poor design](https://www.tedinski.com/2018/01/23/data-objects-and-being-railroaded-into-misdesign.html)).
   - Importantly, sum type can be simulated in Java with a visitor pattern!
   - There are constructs that solve that "problem" (e.g. type classes), but solving it may be not worth it, as pointed out in the article below.
 - [Design duality and the expression problem](https://www.tedinski.com/2018/02/27/the-expression-problem.html)
