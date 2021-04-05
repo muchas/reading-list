@@ -17,6 +17,6 @@ Interesting articles I've encountered grouped by month. Mostly about tech.
   - I really liked the analogy to math, where natural numbers are more data oriented (definition specifies fixed data upfront) and more operations are added on top, whereas abstract algebra (groups, rings etc) define fixed operations and find structures implementing them (types).
   - Important one: client extensibility should not be a default, as closing operations and types extension makes it possible add new things from designer POV (without breaking the clients)
 - [Designing abstractions with properties in mind](https://www.tedinski.com/2018/04/24/design-and-property-tests.html)
-  - Properties seem powerful - once you define one against the abstraction (e.g interface) you can test all implementations the same way.  
+  - Property testing seems powerful - once you define one against the abstraction (e.g interface) you can test all implementations the same way.  
 - Book: Java Concurrency in Practice
   - Key topics: compound actions, visibility (thread caches etc), encapsulation helps in thread safety, without synchronization Java may change operation order, safe publication, confinement (thread, instance, stack), trade-off between synchronization and performance, different ways of achieving thread safety (e.g. immutability), documenting and being aware of concurrency policies
