@@ -16,7 +16,7 @@ Interesting articles I've encountered grouped by month. Mostly about tech.
   - Important one: client extensibility should not be a default, as closing operations and types extension makes it possible to add new things from designer POV (without breaking the clients)
 - [Designing abstractions with properties in mind](https://www.tedinski.com/2018/04/24/design-and-property-tests.html)
   - Property testing seems powerful - once you define one against the abstraction (e.g interface) you can test all implementations the same way.
-- [https://blog.poisson.chat/posts/2018-01-05-generic-random-tour.html](https://blog.poisson.chat/posts/2018-01-05-generic-random-tour.html)
+- [A quick tour of generic-random](https://blog.poisson.chat/posts/2018-01-05-generic-random-tour.html)
   - Very cool library for saving a lot of boilerplate in Haskell when testing code with a custom algebraic data types and QuickCheck.  
 - Book: Java Concurrency in Practice (in progress)
   - Key topics: compound actions, visibility (thread caches etc), encapsulation helps in thread safety, without synchronization Java may change operation order, safe publication, confinement (thread, instance, stack), trade-off between synchronization and performance, different ways of achieving thread safety (e.g. immutability), documenting and being aware of concurrency policies
