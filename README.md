@@ -1,5 +1,5 @@
 # Slawek's reading-list
-Interesting articles I've encountered grouped by month. Mostly about tech.
+Interesting blog posts and articles I've encountered grouped by month. Mostly about tech.
 
 
 ## 2021/April
