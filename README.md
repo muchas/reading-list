@@ -23,4 +23,4 @@ Interesting articles I've encountered grouped by month. Mostly about tech.
 - [Perceiver: General Perception with Iterative Attention](https://arxiv.org/abs/2103.03206)
   - Multiple approaches have been tried to mitigate attention O(n^2) time and memory complexity, but apparently asymetric attention with latent array makes it work quite well? 
   - Attention maps from cross-attention layers don't look that convincing to me.
-  - Transformer based NN architecture goes multi-modal, quite impressive. Wondering if the path forward is about less architectural bias and even more data.
+  - Transformer based NN architecture goes multi-modal, quite impressive. Wondering if the path forward is about less architectural bias and even more training data.
