@@ -13,7 +13,7 @@ Interesting blog posts and articles I've encountered, grouped by month. Mostly a
   - There are constructs that solve that "problem" (e.g. type classes), but solving it may be not worth it, as pointed out in the article below.
 - [Design duality and the expression problem](https://www.tedinski.com/2018/02/27/the-expression-problem.html)
   - I really liked the analogy to math, where natural numbers are more data oriented (definition specifies fixed data upfront) and more operations are added on top, whereas abstract algebra (groups, rings etc) defines fixed operations and finds structures implementing them (types).
-  - Important one: client extensibility should not be a default, as closing operations and types extension makes it possible to add new things from designer POV (without breaking the clients)
+  - Important one: client extensibility should not be a default mode, as closing operations and types extension makes it possible to add new things from designer POV (without breaking the clients)
 - [Designing abstractions with properties in mind](https://www.tedinski.com/2018/04/24/design-and-property-tests.html)
   - Property testing seems powerful - once you define one against the abstraction (e.g interface) you can test all implementations the same way.
 - [A quick tour of generic-random](https://blog.poisson.chat/posts/2018-01-05-generic-random-tour.html)
