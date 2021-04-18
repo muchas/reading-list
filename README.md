@@ -3,6 +3,15 @@ Interesting blog posts and articles I've encountered, grouped by month. Mostly a
 
 
 ## 2021/April
+- [Dex: array programming with typed indices, workshop paper](https://openreview.net/pdf?id=rJxd7vsWPS)
+  - DeepMind experiments with more functional approach to array programming, where array shapes are checked in compile time (type safety achieved with dependent types)
+  - FP combines well with parallel execution (compilation to parallel env)
+  - github repo: https://github.com/google-research/dex-lang
+  - (still need to read it) full-paper published recently: [Getting to the Point. Index Sets and Parallelism-Preserving Autodiff for Pointful Array Programming](https://arxiv.org/pdf/2104.05372.pdf)
+  - fun fact: at the moment A. Paszke is the first paper author and the second GH contributor
+- [What worries me about AI, F.Chollet](https://medium.com/@francois.chollet/what-worries-me-about-ai-ed9df072b704)
+  - Article theme reminds me Social Dilemma, i.e. intelligence explosion is bonkers and we should be more worried about AI integrated with social networks that learns to manipulate human behavior.
+  - Francois touches on inspiring point - what if newsfeed objective functions have been put into control of users themselves - imagine personal assistant that knows your psychological profile, it read all of the books, knows millions of other people and you can explicitly ask it to expand your knowledge to become an expert in the chosen set of topics and it also would help you control time spent on the platform.
 - [An introduction to property based testing](https://fsharpforfunandprofit.com/pbt/) - slides from the presentation
   - Illustration of how well formulated properties can determine the correct implementation of the software under test.
   - Especially useful bit was about patterns helpful in coming up with good and powerful properties:
