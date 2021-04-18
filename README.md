@@ -11,7 +11,7 @@ Interesting blog posts and articles I've encountered, grouped by month. Mostly a
   - fun fact: at the moment A. Paszke is the first paper author and the second GH contributor
 - [What worries me about AI, F.Chollet](https://medium.com/@francois.chollet/what-worries-me-about-ai-ed9df072b704)
   - Article theme reminds me Social Dilemma, i.e. intelligence explosion is bonkers and we should be more worried about AI integrated with social networks that learns to manipulate human behavior.
-  - Francois touches on inspiring point - what if newsfeed objective functions have been put into control of users themselves - imagine personal assistant that knows your psychological profile, it read all of the books, knows millions of other people and you can explicitly ask it to expand your knowledge to become an expert in the chosen set of topics and it also would help you control time spent on the platform.
+  - Francois touches on inspiring point - what if newsfeed objective functions have been put into control of users themselves? Imagine personal assistant that knows your psychological profile that read all of the books, knows millions of other people and you can explicitly ask it to expand your knowledge to become an expert in the chosen set of topics. It would also help you control time spent on the platform by providing less interesting content after established amount of time. Mark, please do it.
 - [An introduction to property based testing](https://fsharpforfunandprofit.com/pbt/) - slides from the presentation
   - Illustration of how well formulated properties can determine the correct implementation of the software under test.
   - Especially useful bit was about patterns helpful in coming up with good and powerful properties:
