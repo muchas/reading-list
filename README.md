@@ -2,6 +2,19 @@
 Interesting blog posts and articles I've encountered, grouped by month. Mostly about tech.
 
 
+## 2021/May
+- [Neural Algorithmic Reasoning](https://arxiv.org/pdf/2105.02761.pdf) [May 6, 2021]
+  - Opinion article from DeepMind researchers.
+  - The idea is to encode classical algorithms (e.g. Dijkstra) into neural network representation by training it using generated examples. After that, the algorithm can be adapted to real-world inputs by swapping and fine-tuning encoder / decoder layers. Authors suggest that real-world instances of NP-complete problems may not be the worst-case scenario and learnable component could help in tackling translation from noisy and often changing input data into more stable abstract representation suitable for classical methods.
+  - Authors make interesting point that software engineers learn a handful of algorithms that can be combined, adapted and used in multiple different problems. 
+- [Memoization in Cost-based Optimizers](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers) [Mar 25, 2021]
+  - Turns out, MEMO data structure is essential and backs most of the modern cost-based optimizers.
+  - MEMO is a variation of the [AND/OR graph](https://anilshanbhag.in/static/papers/rsgraph_vldb14.pdf) 
+- [How We Built a Cost-Based SQL Optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/) [Nov 8, 2018]
+  - As optimizer grows, heuristic based rules often start to conflict with each other and can get more difficult to reason about. Cost-based approach tends to be more robust.
+  - Cost based optimizer prototype in Go: https://github.com/petermattis/opttoy
+  - Key concept: MEMO data structure. It allows to avoid exponential memory increase when applying rewrite rules and generating equivalent plan trees. 
+
 ## 2021/April
 - [Dex: array programming with typed indices, workshop paper](https://openreview.net/pdf?id=rJxd7vsWPS)
   - DeepMind experiments with more functional approach to array programming, where array shapes are checked in compile time (type safety achieved with dependent types)
